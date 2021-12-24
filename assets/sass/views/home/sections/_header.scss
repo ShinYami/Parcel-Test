@@ -1,0 +1,19 @@
+/* HOME HEADER
+---------------------------------------------------------------------------------------------------- */
+
+.homeHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.homeHeader__title {
+    font-weight: 700;
+}
+
+.homeHeader__subtitle {
+    font-family: 'pp_neue_montrealthin';
+    letter-spacing: .1rem;
+}
