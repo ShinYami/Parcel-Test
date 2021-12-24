@@ -1,1 +1,3 @@
-import './components/intro';
+// COMPONENTS
+import './components/intro'
+import './components/homeHeader'
