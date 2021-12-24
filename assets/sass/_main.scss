@@ -26,8 +26,8 @@ html {
 
 body {
     height: 100%;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
 
     text-rendering: optimizeLegibility;
     @include font-smoothing(on);
@@ -41,6 +41,7 @@ body {
 
     ::selection {
         color: #111210;
+
         background: #fff;
     }
 }
@@ -49,8 +50,8 @@ h1,
 h2,
 h3,
 h4 {
-    text-transform: uppercase;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 p {
