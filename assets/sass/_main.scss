@@ -26,13 +26,13 @@ html {
 
 body {
     height: 100%;
-    margin-right: 20%;
-    margin-left: 20%;
+    // max-width: 144rem;
+    // margin: auto;
 
     text-rendering: optimizeLegibility;
     @include font-smoothing(on);
     font-family: 'Bigilla';
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     line-height: 1.83;
     color: #fff;
 
@@ -41,6 +41,7 @@ body {
 
     ::selection {
         color: #111210;
+
         background: #fff;
     }
 }
@@ -49,12 +50,56 @@ h1,
 h2,
 h3,
 h4 {
-    text-transform: uppercase;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 p {
     font-family: 'pp_neue_montrealbook';
+    line-height: 1.5;
 }
 
 
+#gridWrapper {
+    position: fixed;
+    height: 100vh;
+    inset: 0;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity .2s $ease-in-out-cubic;
+}
+
+.is-visible {
+    opacity: 1 !important;
+}
+
+.gridCol {
+    float: left;
+    height: 100%;
+
+    background: #f00;
+    opacity: .2;
+
+
+    // // MQ
+    // @include maxw($bp-mobile) {
+    //     &:nth-child(#{$m-col-number}) {
+    //         margin-right: 0 !important;
+
+    //         & ~ .gridCol {
+    //             display: none;
+    //         }
+    //     }
+    // }
+}
+
+
+.brick {
+    height: 15rem;
+
+    background: gray;
+    margin-bottom: 3rem;
+}

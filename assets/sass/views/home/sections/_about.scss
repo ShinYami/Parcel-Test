@@ -1,27 +1,7 @@
 /* HOME ABOUT
 ---------------------------------------------------------------------------------------------------- */
 
-.homeAbout__title {
-    // font-size: 7.2rem;
+.homeAbout {
+    padding-bottom: 10rem;
 }
 
-.homeAboutInner__about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    p {
-        margin-left: 30%;
-    }
-}
-
-.homeAboutInner__title {
-    margin-left: 10rem;
-}
-
-.homeAboutInner__list {
-    font-family: 'pp_neue_montrealbook';
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}

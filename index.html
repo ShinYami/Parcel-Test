@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Loris Conti">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="./assets/img/share-assets/og-share-image.jpg">
         <link rel="stylesheet" href="./assets/sass/app.scss">
         <title>Loris Conti</title>
     </head>
@@ -13,60 +16,71 @@
             <strong class="logo-header">
                 <span class="logo">WEL</span><span class="logo">COME</span>
             </strong>
-
         </div>
 
         <header class="headerNav">
             <nav class="headerNav__nav">
-                <!-- <span class="headerNav__menuBtn">Menu</span> 
-                <div class="headerNav__toggle"></div> -->
+                <div class="headerNav__menu | oh | ta-c">
+                    <span class="headerNav__menuBtn | navbtn | fw-bold">Menu</span> 
+                    <span class="headerNav__closeBtn | navbtn | fw-bold">Close</span> 
+                </div>
+                <ul class="headerNav__list | oh">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./views/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./views/contact.html">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
         <main class="home">
             <header class="homeHeader">
                 <div class="homeHeader__inner | ta-c">
-                    <h1 class="homeHeader__title | title title--xl">Loris Conti</h1>
-                    <h2 class="homeHeader__subtitle">Front-End Developer</h2>
+                    <div class="oh">
+                        <h1 class="homeHeader__title | title title--xl">Loris Conti</h1>
+                    </div>
+                    <div class="oh">
+                        <h2 class="homeHeader__subtitle | title title--s">Front-End Developer</h2>
+                    </div>
                 </div>
             </header>
 
-            <section class="homeAbout">
-                <div class="homeAbout__inner">
-                    <div class="homeAboutInner__about">
-                        <h2 class="homeAbout__title | title title--l">About</h2>
-                        <p>Hello, I’m Loris and i’m a Belgian Front-End Developer based in Belgium.I’m currentrly working at Reed.be as Front-End Developer.I have a lot of interest for interactivity and technologies like javascript, GLSL and webgl.</p>
-                    </div>
-                    <div class="homeAboutInner__about">
-                        <h3 class="homeAboutInner__title">Sofwares</h3>
-                        <ul class="homeAboutInner__list">
-                            <li>Figma</li>
-                            <li>Sketch</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Vegas</li>
-                            <li>Premiere</li>
-                        </ul>
-                    </div>
-                    <div class="homeAboutInner__about">
-                        <h3 class="homeAboutInner__title">Languages</h3>
-                        <ul class="homeAboutInner__list">
-                            <li>Html</li>
-                            <li>CSS</li>
-                            <li>Scss</li>
-                            <li>Javascript</li>
-                            <li>PHP</li>
-                            <li>VueJS</li>
-                            <li>REACT</li>
-                        </ul>
-                    </div>
-                </div>
+            <section class="wall | ctn | row">
+                <div class="brick | col-1 | tp-col-2">col-1</div>
+                <div class="brick | col-11 | tp-col-10 | col-free | tp-col-free">col-11</div>
+                <div class="brick | col-2 | tp-col-2">col-2</div>
+                <div class="brick | col-10 | tp-col-10 | col-free | tp-col-free">col-10</div>
+                <div class="brick | col-3 | tp-col-3">col-3</div>
+                <div class="brick | col-9 | tp-col-9 | col-free | tp-col-free">col-9</div>
             </section>
-            <a href="./views/contact.html">contact</a>
+
+            <div class="ctn | test" id="gridWrapper">
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1 | m-col-free"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+                <div class="gridCol | col-1 | tp-col-1 | m-col-1"></div>
+            </div>
+
+            <!-- <a href="./views/contact.html">contact</a> -->
         </main>
 
-        <footer class="ta-c">
-            <span>Loris Conti - 2022</span>
+        <footer class="ctn">
+            <div class="footer__inner | ta-c">
+                <span>Loris Conti - 2022</span>
+            </div>
         </footer>
 
         <script type="module" src="./assets/js/main.js"></script>

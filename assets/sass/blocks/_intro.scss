@@ -3,39 +3,54 @@
 
 .intro {
     position: fixed;
-    z-index: 1;
-    left: 0;
     top: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
     height: 100vh;
-    background-color: #fff;
-    transition: 1s $ease-in-out-cubic;
+
     font-size: 7.2rem;
+
+    background-color: #fff;
+
+    transition: 1s $ease-in-out-cubic;
+
+    // MQ
+    @include maxw($bp-mobile) {
+        font-size: 4rem;
+    }
 }
 
 .logo-header {
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
     color: #111210;
+
+    transform: translate(-50%, -50%);
 }
 
 .logo {
-    position: relative;
     display: inline-block;
+    position: relative;
     bottom: -2rem;
+
     opacity: 0;
 }
 
 .logo.active {
     bottom: 0;
+
     opacity: 1;
+
     transition: .5s $ease-in-out-cubic;
 }
 
 .logo.fade {
     bottom: 15rem;
+
     opacity: 0;
+
     transition: .5s $ease-in-out-cubic;
 }

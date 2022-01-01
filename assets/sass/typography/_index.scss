@@ -15,7 +15,6 @@
 --------------------------------------------------------- */
 
 .title {
-    // font-family: $f-SN;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.83;
@@ -35,7 +34,6 @@
 
     &--l,
     &--xl { font-size: m-vw(28); line-height: 1.35; }
-    &--xxl { font-size: m-vw(46); line-height: 1.35; }
 
 
     // MQ
@@ -45,7 +43,6 @@
 
         &--l,
         &--xl { font-size: tp-vw(52); line-height: 1.15; }
-        &--xxl { font-size: tp-vw(60); line-height: 1.15; }
     }
 
 
@@ -55,9 +52,8 @@
         &--xs { font-size: 1.4rem; }
         &--s  { font-size: min(#{d-vw(22)}, 2.2rem); }
         &--m  { font-size: min(#{d-vw(28)}, 2.8rem); }
-        &--l  { font-size: min(#{d-vw(72)}, 7.2rem); line-height: 1.19; }
-        &--xl { font-size: min(#{d-vw(100)}, 10rem); line-height: 1.15; }
-        &--xxl { font-size: min(#{d-vw(150)}, 15rem); line-height: 1.15; }
+        &--l  { font-size: min(#{d-vw(52)}, 5.2rem); line-height: 1.19; }
+        &--xl { font-size: min(#{d-vw(80)}, 8rem); line-height: 1.15; }
     }
 }
 
