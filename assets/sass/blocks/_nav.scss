@@ -17,6 +17,15 @@
 
     cursor: pointer;
     mix-blend-mode: difference;
+
+    // MQ
+    @include maxw($bp-tabletP) {
+        right: 7%;
+    }
+
+    @include maxw($bp-mobile) {
+        right: 5%;
+    }
 }
 
 .headerNav__menuBtn {

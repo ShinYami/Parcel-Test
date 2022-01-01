@@ -5,33 +5,3 @@
     padding-bottom: 10rem;
 }
 
-.homeAbout__me {
-    // MQ
-    @include maxw($bp-mobile) {
-        flex-direction: column;
-    }
-}
-
-.homeAbout__soft {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.homeAboutSoft_list,
-.homeAboutTech_list {
-
-    li {
-        position: relative;
-
-        &::after {
-            content: '-';
-        }
-
-        &:last-child {
-            &::after {
-                content: none;
-            }
-        }
-    }
-}
-
