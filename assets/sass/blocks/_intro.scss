@@ -14,6 +14,11 @@
     background-color: #fff;
 
     transition: 1s $ease-in-out-cubic;
+
+    // MQ
+    @include maxw($bp-mobile) {
+        font-size: 4rem;
+    }
 }
 
 .logo-header {
